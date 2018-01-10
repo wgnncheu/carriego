@@ -75,6 +75,9 @@
     "properties": {
       "trackingNumber": {
         "type": "string"
+      },
+      "errorMessage": {
+        "type": "string"
       }
     }
   }
