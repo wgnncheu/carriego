@@ -6,12 +6,12 @@
       "selected": true
     },
     {
-      "name": "Tab Two",
+      "name": "Shipper",
       "icon": "ion-ios-bell",
       "selected": false
     },
     {
-      "name": "Tab Three",
+      "name": "Recipient",
       "icon": "ion-help-buoy",
       "selected": false
     }
