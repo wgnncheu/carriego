@@ -1,7 +1,7 @@
 {
   "id": "app",
   "name": "carriego",
-  "startScreen": "app.blank",
+  "startScreen": "app.barcode",
   "screens": [
     {
       "id": "blank",

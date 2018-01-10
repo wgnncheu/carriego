@@ -4,5 +4,11 @@
   "defaultLayout": "phone-portrait",
   "previewToken": "cefef0ef",
   "uiCommonVersion": "5.2.10",
-  "creatorId": "bhuzbonu"
+  "creatorId": "bhuzbonu",
+  "id": "carriego",
+  "previewImageURL": "/previews/cefef0ef-carriego/app/blank.png",
+  "isVersioned": true,
+  "githubRepo": "https://github.com/bhuzbonu/carriego",
+  "creatorName": "Zoltan Bonus",
+  "sdks": []
 }
