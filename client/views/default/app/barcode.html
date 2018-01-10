@@ -20,35 +20,31 @@
                     data-comp-id="button.3" style="float: right;"></button>
             </div>
         </div>
-        <div data-comp-id="div.2" style="width: 80%; margin: 4% 10%;">
-            <div class="row" data-comp-id="row.1" style="margin: 0px; padding: 0px;">
-                <div class="col col-10" data-comp-id="column.1"></div>
-                <div class="col" data-comp-id="column.2">
-                    {{redval}}
-                    <button class="button button-block button-positive button-clear positive-border"
-                        data-comp-id="button.2" ng-click="reset()">
-                        <i class="icon ion-close-circled" data-comp-id="icon.1"
-                            style="font-size: 16px;  color: rgb(0, 154, 221);"></i>
-                        <span style="font-size: 14px; color: rgb(0, 154, 221);">Clear Barcode</span>
-                    </button>
-                </div>
-                <div class="col col-10" data-comp-id="column.3"></div>
+        <div class="row" data-comp-id="row.2">
+            <div class="col" data-comp-id="column.4">
+                <button class="button button-block button-positive button-clear positive-border"
+                    data-comp-id="button.2" ng-click="reset()">
+                    <i class="icon ion-close-circled" data-comp-id="icon.1"
+                        style="font-size: 16px;  color: rgb(0, 154, 221);"></i>
+                    <span style="font-size: 14px; color: rgb(0, 154, 221);">Clear Barcode</span>
+                </button>
             </div>
         </div>
         <!--Form Contents-->
     </ion-content>
+    <ion-footer-bar data-comp-id="footer-bar.1" dynamic-fixed-footer="">
+        <div class="footer-button button-footer-center" data-comp-id="footerButton.1">
+            <button
+                class="button button-positive button-round button-shadowed fa-icon fa-barcode"></button>
+            <div class="label"></div>
+        </div>
+    </ion-footer-bar>
     <div class="footer-button-bar" data-comp-id="footer-bar-buttons.1"
         dynamic-floating-footer="">
         <div class="row" data-comp-id="row.3" style="padding: 0px;">
             <div class="col" data-comp-id="column.5" style="padding: 0px;"></div>
             <div class="col text-center" data-comp-id="column.6" ng-click="scan()"
-                style="padding: 0px;">
-                <div class="footer-button" data-comp-id="footerButton.1">
-                    <button
-                        class="button button-positive button-round button-shadowed fa-icon fa-barcode"></button>
-                    <div class="label"></div>
-                </div>
-            </div>
+                style="padding: 0px;"></div>
             <div class="col text-right" data-comp-id="column.7" style="padding: 0px;"></div>
         </div>
     </div>
