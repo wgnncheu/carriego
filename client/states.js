@@ -51,5 +51,14 @@ angular.module('app').config(function ($stateProvider) {
                 }
             }
         }
+    }).state('app.tabsconfident', {
+        views: {
+            app: {
+                controller: 'app_tabsconfident',
+                templateProvider: function (app) {
+                    return app.templateProvider('app.tabsconfident');
+                }
+            }
+        }
     });
 });

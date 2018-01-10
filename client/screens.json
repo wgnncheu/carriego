@@ -33,6 +33,13 @@
       "name": "Barcode",
       "sourceScreenId": "app.barcode",
       "sourceAppId": "Barcode"
+    },
+    {
+      "id": "tabsconfident",
+      "name": "Tabs-Confident",
+      "sourceScreenId": "app.tabbednavigation.tabsconfident",
+      "sourceAppId": "universaltemplates",
+      "model": "tabsconfident"
     }
   ],
   "sourceAppId": "_blank",
