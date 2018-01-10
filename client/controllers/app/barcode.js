@@ -21,7 +21,7 @@ function app_barcode($scope, app) {
         });
     };
     $scope.submit = function () {
-        
+        alert('faszom1');
     
     };
 }
