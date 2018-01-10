@@ -21,7 +21,10 @@ function app_barcode($scope, app) {
         });
     };
     $scope.submit = function () {
-        $scope.app.showLoading('Searching for tracking number...');
+        $scope.app.showLoading('Searching for tracking number: ' + $scope.data.text);
+        
+        
+        
         app.go('app.details');
     };
 }
