@@ -55,9 +55,6 @@ angular.module('app').config(function ($stateProvider) {
         views: {
             app: {
                 controller: 'app_details',
-                params: {
-                    extraData: null
-                },
                 templateProvider: function (app) {
                     return app.templateProvider('app.details');
                 }
