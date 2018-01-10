@@ -3,5 +3,5 @@ function app_details($scope, app, extraData) {
     'use strict';
     app.init($scope);
     
-    
+    $scope.data = extraData;
 }
