@@ -66,6 +66,9 @@
             }
           }
         }
+      },
+      "trackingNumber": {
+        "type": "string"
       }
     }
   },
