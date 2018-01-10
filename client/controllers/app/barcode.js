@@ -21,6 +21,8 @@ function app_barcode($scope, app) {
         });
     };
     $scope.submit = function () {
+        $scope.data.errorMessage = "";
+        
         
         var trackingNumber = $scope.data.trackingNumber;
         if (trackingNumber === undefined || trackingNumber.length === 0) {
