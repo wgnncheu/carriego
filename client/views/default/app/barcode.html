@@ -8,7 +8,7 @@
     </ion-nav-bar>
     <ion-content class="" data-comp-id="ionic-content.1">
         <!--Form Contents-->
-        <div class="row" data-comp-id="row.4">
+        <div class="row" data-comp-id="row.4" style="">
             <div class="col" data-comp-id="column.9">
                 <label class="item item-input" data-comp-id="textInput.2">
                     <span class="input-label"></span>
@@ -16,28 +16,29 @@
                 </label>
             </div>
             <div class="col col-20" data-comp-id="column.8">
-                <button class="button ion-android-search icon button-round"
-                    data-comp-id="button.3" style="float: right;"></button>
+                <div class="footer-button button-footer-center" data-comp-id="footerButton.1">
+                    <button
+                        class="button button-positive button-round button-shadowed fa-icon fa-barcode"
+                        ng-click="scan()"></button>
+                    <div class="label"></div>
+                </div>
             </div>
         </div>
         <div class="row" data-comp-id="row.2">
-            <div class="col" data-comp-id="column.4">
-                <button class="button button-block button-positive button-clear positive-border"
-                    data-comp-id="button.2" ng-click="reset()">
-                    <i class="icon ion-close-circled" data-comp-id="icon.1"
-                        style="font-size: 16px;  color: rgb(0, 154, 221);"></i>
-                    <span style="font-size: 14px; color: rgb(0, 154, 221);">Clear Barcode</span>
-                </button>
+            <div class="col text-center" data-comp-id="column.4">
+                <button class="button ion-android-search icon button-round"
+                    data-comp-id="button.3" style=""></button>
             </div>
         </div>
         <!--Form Contents-->
     </ion-content>
     <ion-footer-bar data-comp-id="footer-bar.1" dynamic-fixed-footer="">
-        <div class="footer-button button-footer-center" data-comp-id="footerButton.1">
-            <button
-                class="button button-positive button-round button-shadowed fa-icon fa-barcode"></button>
-            <div class="label"></div>
-        </div>
+        <button class="button button-block button-positive button-clear positive-border"
+            data-comp-id="button.2" ng-click="reset()">
+            <i class="icon ion-close-circled" data-comp-id="icon.1"
+                style="font-size: 16px;  color: rgb(0, 154, 221);"></i>
+            <span style="font-size: 14px; color: rgb(0, 154, 221);">Clear Barcode</span>
+        </button>
     </ion-footer-bar>
     <div class="footer-button-bar" data-comp-id="footer-bar-buttons.1"
         dynamic-floating-footer="">
