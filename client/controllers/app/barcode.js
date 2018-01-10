@@ -9,7 +9,7 @@ function app_barcode($scope, app) {
         cordova.plugins.barcodeScanner.scan(function (result) {
             setTimeout(function () {
                 $scope.data.format = result.format;
-                $scope.data.text = result.text;
+                $scope.data.trackingNumber = result.text;
                 $scope.$digest();
             }, 0);
         }, function (error) {
@@ -21,7 +21,7 @@ function app_barcode($scope, app) {
         });
     };
     $scope.submit = function () {
-        $scope.app.showLoading('Searching for tracking number: ' + $scope.data.text);
+        $scope.app.showLoading('Searching for tracking number: ' + $scope.data.trackingNumber);
         
         
         
