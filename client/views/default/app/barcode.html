@@ -8,16 +8,17 @@
     </ion-nav-bar>
     <ion-content class="" data-comp-id="ionic-content.1">
         <!--Form Contents-->
-        <div data-comp-id="div.1" style="margin: 10% 10% 2%;">
-            <label class="item item-input light-bg" data-comp-id="textInput.1"
-                ng-hide="true">
-                <span class="input-label dark">Format</span>
-                <input ng-model="data.format" type="text">
-            </label>
-            <label class="item item-input" data-comp-id="textInput.2">
-                <span class="input-label"></span>
-                <input ng-model="data.text" placeholder="Tracking number" type="text">
-            </label>
+        <div class="row" data-comp-id="row.4">
+            <div class="col" data-comp-id="column.9">
+                <label class="item item-input" data-comp-id="textInput.2">
+                    <span class="input-label"></span>
+                    <input ng-model="data.text" placeholder="Tracking number" type="text">
+                </label>
+            </div>
+            <div class="col col-20" data-comp-id="column.8">
+                <button class="button ion-android-search icon button-round"
+                    data-comp-id="button.3" style="float: right;"></button>
+            </div>
         </div>
         <div data-comp-id="div.2" style="width: 80%; margin: 4% 10%;">
             <div class="row" data-comp-id="row.1" style="margin: 0px; padding: 0px;">
@@ -25,7 +26,7 @@
                 <div class="col" data-comp-id="column.2">
                     {{redval}}
                     <button class="button button-block button-positive button-clear positive-border"
-                        data-comp-id="button.3" ng-click="reset()">
+                        data-comp-id="button.2" ng-click="reset()">
                         <i class="icon ion-close-circled" data-comp-id="icon.1"
                             style="font-size: 16px;  color: rgb(0, 154, 221);"></i>
                         <span style="font-size: 14px; color: rgb(0, 154, 221);">Clear Barcode</span>
@@ -35,17 +36,12 @@
             </div>
         </div>
         <!--Form Contents-->
-        <div class="row" data-comp-id="row.3">
-            <div class="col" data-comp-id="column.7">
-                <button class="button button-block" data-comp-id="button.2">Submit</button>
-            </div>
-        </div>
     </ion-content>
     <div class="footer-button-bar" data-comp-id="footer-bar-buttons.1"
         dynamic-floating-footer="">
-        <div class="row" data-comp-id="row.2" style="padding: 0px;">
-            <div class="col" data-comp-id="column.4" style="padding: 0px;"></div>
-            <div class="col text-center" data-comp-id="column.5" ng-click="scan()"
+        <div class="row" data-comp-id="row.3" style="padding: 0px;">
+            <div class="col" data-comp-id="column.5" style="padding: 0px;"></div>
+            <div class="col text-center" data-comp-id="column.6" ng-click="scan()"
                 style="padding: 0px;">
                 <div class="footer-button" data-comp-id="footerButton.1">
                     <button
@@ -53,7 +49,7 @@
                     <div class="label"></div>
                 </div>
             </div>
-            <div class="col text-right" data-comp-id="column.6" style="padding: 0px;"></div>
+            <div class="col text-right" data-comp-id="column.7" style="padding: 0px;"></div>
         </div>
     </div>
 </ion-view>
