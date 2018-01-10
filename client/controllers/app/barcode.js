@@ -32,11 +32,11 @@ function app_barcode($scope, app) {
         
         // TODO implement DB call with trackingNumber
         
-        var detailsScope = {
+        var detailsData = {
             trackingNumber: trackingNumber
         };
         
        // app_details(detailsScope, app)
-        app.go('app.details', { $scope: detailsScope, app: app });
+        app.go('app.details', { $scope.data: detailsData });
     };
 }
