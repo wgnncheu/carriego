@@ -42,5 +42,14 @@ angular.module('app').config(function ($stateProvider) {
                 }
             }
         }
+    }).state('app.barcode', {
+        views: {
+            app: {
+                controller: 'app_barcode',
+                templateProvider: function (app) {
+                    return app.templateProvider('app.barcode');
+                }
+            }
+        }
     });
 });

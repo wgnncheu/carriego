@@ -27,6 +27,12 @@
       "sourceScreenId": "app.login.logincool",
       "sourceAppId": "universaltemplates",
       "model": "login"
+    },
+    {
+      "id": "barcode",
+      "name": "Barcode",
+      "sourceScreenId": "app.barcode",
+      "sourceAppId": "Barcode"
     }
   ],
   "sourceAppId": "_blank",
