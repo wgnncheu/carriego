@@ -36,7 +36,6 @@ function app_barcode($scope, app) {
             trackingNumber: trackingNumber
         };
         
-       // app_details(detailsScope, app)
-        app.go('app.details', { $scope.data: detailsData });
+        app.go('app.details', { extraData: detailsData });
     };
 }
