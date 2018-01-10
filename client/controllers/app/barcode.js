@@ -22,6 +22,6 @@ function app_barcode($scope, app) {
     };
     $scope.submit = function () {
         $scope.app.showLoading('Searching for tracking number...');
-        app.go('Details');
+        app.go('app.details');
     };
 }
