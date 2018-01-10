@@ -68,5 +68,14 @@
         }
       }
     }
+  },
+  "barcode": {
+    "type": "object",
+    "comment": "",
+    "properties": {
+      "trackingNumber": {
+        "type": "string"
+      }
+    }
   }
 }
