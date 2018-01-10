@@ -23,9 +23,9 @@ function app_barcode($scope, app) {
     $scope.submit = function () {
         
         var trackingNumber = $scope.data.trackingNumber;
-        if (trackingNumber.length == 0)
-        {
-            
+        if (trackingNumber.length === 0) {
+            $scope.data.errorMessage = 'Please enter a tracking number';
+            return;
         }
         
         $scope.app.showLoading('Searching for tracking number: ' + trackingNumber);
