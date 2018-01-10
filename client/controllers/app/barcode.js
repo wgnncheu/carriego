@@ -20,4 +20,8 @@ function app_barcode($scope, app) {
             'orientation': 'landscape'
         });
     };
+    $scope.submit = function () {
+        
+    
+    };
 }
