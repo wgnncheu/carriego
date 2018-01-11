@@ -3,5 +3,6 @@ function app_details($scope, app) {
     'use strict';
     app.init($scope);
     
+    $scope.data.trackingNumber = app.detailsData.trackingNumber;
     //$scope.data = extraData;
 }
