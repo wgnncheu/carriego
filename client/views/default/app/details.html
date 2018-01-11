@@ -26,15 +26,17 @@
                 </div>
             </div>
         </div>
-        <label class="item item-input" data-comp-display="labeledtext.1"
-            data-comp-id="textInput.1">
-            <span class="input-label">Tracking number</span>
-            <span ng-bind="data.shipmentDetails.trackingNumber" type="text"></span>
-        </label>
-        <label class="item item-input" data-comp-display="labeledtext.2"
-            data-comp-id="textInput.2">
-            <span class="input-label">Shipment number</span>
-            <span ng-bind="data.shipmentDetails.shipmentNumber" type="text"></span>
-        </label>
+        <div class="card" data-comp-display="card.1" data-comp-id="div.2">
+            <label class="item item-input" data-comp-display="labeledtext.1"
+                data-comp-id="textInput.1">
+                <span class="input-label">Tracking number</span>
+                <span ng-bind="data.shipmentDetails.trackingNumber" type="text"></span>
+            </label>
+            <label class="item item-input" data-comp-display="labeledtext.2"
+                data-comp-id="textInput.2">
+                <span class="input-label">Shipment number</span>
+                <span ng-bind="data.shipmentDetails.shipmentNumber" type="text"></span>
+            </label>
+        </div>
     </ion-content>
 </ion-view>
