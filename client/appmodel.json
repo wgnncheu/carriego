@@ -78,6 +78,9 @@
           },
           "serialNumber": {
             "type": "string"
+          },
+          "shipmentStatus": {
+            "type": "string"
           }
         }
       }
