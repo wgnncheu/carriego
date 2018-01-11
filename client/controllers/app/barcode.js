@@ -37,7 +37,6 @@ function app_barcode($scope, app) {
         };
         
         app.shipmentDetails = shipmentDetails;
-        
         app.go('app.details');
     };
 }
