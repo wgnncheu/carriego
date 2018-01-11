@@ -72,6 +72,12 @@
         "properties": {
           "trackingNumber": {
             "type": "string"
+          },
+          "shipmentNumber": {
+            "type": "string"
+          },
+          "serialNumber": {
+            "type": "string"
           }
         }
       }
