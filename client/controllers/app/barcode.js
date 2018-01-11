@@ -32,6 +32,7 @@ function app_barcode($scope, app) {
         
         var apiResult = app.call("sql.loadShipmentDetails", { "trackingNumber": trackingNumber });
        
+       /*
         console.log(apiResult);
        
         var shipmentDetails = {
@@ -40,5 +41,6 @@ function app_barcode($scope, app) {
         
         app.shipmentDetails = shipmentDetails;
         app.go('app.details');
+        */
     };
 }
