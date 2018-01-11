@@ -81,6 +81,12 @@
           },
           "shipmentStatus": {
             "type": "string"
+          },
+          "serviceLevel": {
+            "type": "string"
+          },
+          "carrier": {
+            "type": "string"
           }
         }
       }
