@@ -32,7 +32,7 @@ function app_barcode($scope, app) {
         
         // TODO implement DB call with trackingNumber
         var params = {
-            trackingNumber: trackingNumber
+            "trackingNumber": trackingNumber
         };
         
         app.call("sql.loadShipmentDetails", params);
