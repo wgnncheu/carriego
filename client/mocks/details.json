@@ -1,6 +1,7 @@
 {
   "shipmentDetails": {
-    "trackingNumber": "123"  
+    "trackingNumber": "123",
+    "shipmentNumber": "sn01"
   },
   "tabs": [
     {
