@@ -1,4 +1,7 @@
 {
+  "shipmentDetails": {
+    "trackingNumber": "123"  
+  },
   "tabs": [
     {
       "name": "General",
