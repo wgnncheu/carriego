@@ -5,6 +5,8 @@ function app_details($scope, app) {
     app.init($scope);
     $scope.data.trackingNumber = app.detailsData.trackingNumber;
   
+    $scope.$digest();
+  
     alert($scope.data.trackingNumber);
     //$scope.data = extraData;
 }
