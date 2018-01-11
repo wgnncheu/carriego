@@ -67,11 +67,12 @@
           }
         }
       },
-      "trackingNumber": {
-        "type": "string",
-        "update": {
-          "type": "change",
-          "dynamic": false
+      "shipmentDetails": {
+        "type": "object",
+        "properties": {
+          "trackingNumber": {
+            "type": "string"
+          }
         }
       }
     }
