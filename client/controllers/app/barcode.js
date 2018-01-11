@@ -11,6 +11,7 @@ function app_barcode($scope, app) {
                 $scope.data.format = result.format;
                 $scope.data.trackingNumber = result.text;
                 $scope.$digest();
+                app.action('barcode', 'submit', this);
             }, 0);
         }, function (error) {
         }, {
