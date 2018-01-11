@@ -21,8 +21,6 @@ function app_details($scope, app) {
         }
     ];
     
-    
     var shipmentDetails = app.data.shipmentDetails.recordset[0];
-    
     app.data.shipmentDetails = shipmentDetails;
 }
