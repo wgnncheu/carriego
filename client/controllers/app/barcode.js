@@ -31,6 +31,7 @@ function app_barcode($scope, app) {
         $scope.app.showLoading('Searching for tracking number: ' + trackingNumber);
         
         // TODO implement DB call with trackingNumber
+        getShipmentDetails(trackingNumber);
         
         var shipmentDetails = {
             trackingNumber: trackingNumber
@@ -42,7 +43,7 @@ function app_barcode($scope, app) {
     
     $scope.getShipmentDetails = function (trackingNumber) {
       
-        const sql = require('mssql')
+        const sql = require('mssql');
  
         async () => {
             try {
