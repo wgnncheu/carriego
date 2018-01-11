@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "isBarcode": {
+      "type": "identifier",
+      "selector": "body",
+      "control": "exists"
+    }
+  },
+  "connect": [
+    {
+      "match": [
+        "isBarcode"
+      ],
+      "screens": [
+        "barcode"
+      ]
+    }
+  ]
+}
