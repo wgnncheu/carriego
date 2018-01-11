@@ -72,6 +72,21 @@
         "properties": {
           "trackingNumber": {
             "type": "string"
+          },
+          "shipmentNumber": {
+            "type": "string"
+          },
+          "serialNumber": {
+            "type": "string"
+          },
+          "shipmentStatus": {
+            "type": "string"
+          },
+          "serviceLevel": {
+            "type": "string"
+          },
+          "carrier": {
+            "type": "string"
           }
         }
       }

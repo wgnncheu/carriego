@@ -26,10 +26,49 @@
                 </div>
             </div>
         </div>
-        <label class="item item-input" data-comp-display="labeledtext.1"
-            data-comp-id="textInput.1">
-            <span class="input-label">Tracking number</span>
-            <span ng-bind="data.shipmentDetails.trackingNumber" type="text"></span>
-        </label>
+        <div class="card" data-comp-display="card.1" data-comp-id="div.2">
+            <div class="row" data-comp-id="row.2">
+                <div class="col" data-comp-id="column.2">
+                    <div data-comp-id="text.3">Tracking number</div>
+                </div>
+                <div class="col" data-comp-id="column.3">
+                    <div data-comp-id="text.4" ng-bind="data.shipmentDetails.trackingNumber"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-comp-display="card.1" data-comp-id="div.3">
+            <div class="row">
+                <div class="col" data-comp-id="column.4">
+                    <div data-comp-id="text.5">Shipment number</div>
+                </div>
+                <div class="col" data-comp-id="column.5">
+                    <div data-comp-id="text.6" ng-bind="data.shipmentDetails.shipmentNumber"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" data-comp-id="column.6">
+                    <div data-comp-id="text.7">Shipment status</div>
+                </div>
+                <div class="col" data-comp-id="column.7">
+                    <div data-comp-id="text.8" ng-bind="data.shipmentDetails.shipmentStatus"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" data-comp-id="column.8">
+                    <div data-comp-id="text.9">Carrier</div>
+                </div>
+                <div class="col" data-comp-id="column.9">
+                    <div data-comp-id="text.10" ng-bind="data.shipmentDetails.carrier"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" data-comp-id="column.10">
+                    <div data-comp-id="text.11">Service level</div>
+                </div>
+                <div class="col" data-comp-id="column.11">
+                    <div data-comp-id="text.12" ng-bind="data.shipmentDetails.serviceLevel"></div>
+                </div>
+            </div>
+        </div>
     </ion-content>
 </ion-view>
