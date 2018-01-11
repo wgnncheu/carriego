@@ -6,7 +6,7 @@ function app_details($scope, app) {
     setTimeout(function () {
         $scope.data.shipmentDetails = app.shipmentDetails;
         console.log($scope.data.shipmentDetails.trackingNumber);
-    }, 2000);
+    }, 1000);
     
     
    
