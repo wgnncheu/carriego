@@ -29,18 +29,6 @@ function app_barcode($scope, app) {
         }
         
         $scope.app.showLoading('Searching for tracking number: ' + trackingNumber);
-        
         var apiResult = app.call("sql.loadShipmentDetails", { "trackingNumber": trackingNumber });
-       
-       /*
-        console.log(apiResult);
-       
-        var shipmentDetails = {
-            trackingNumber: trackingNumber
-        };
-        
-        app.shipmentDetails = shipmentDetails;
-        app.go('app.details');
-        */
     };
 }
