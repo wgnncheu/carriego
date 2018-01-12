@@ -7,14 +7,12 @@ function app_details($scope, app) {
         {
           name: "General",
           icon: "ion-ios-information",
-          selected: true, 
-          action: "changeSelection()"
+          selected: true
         },
         {
           name: "Address",
           icon: "ion-help-buoy",
-          selected: false,
-          action: "changeSelection()"
+          selected: false
         }
     ];
     
