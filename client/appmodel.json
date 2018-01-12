@@ -87,6 +87,30 @@
           },
           "carrier": {
             "type": "string"
+          },
+          "packageHeight": {
+            "type": "string"
+          },
+          "packageLength": {
+            "type": "string"
+          },
+          "packageDepth": {
+            "type": "string"
+          },
+          "dimensionUOM": {
+            "type": "string"
+          },
+          "totalWeight": {
+            "type": "string"
+          },
+          "measuredWeight": {
+            "type": "string"
+          },
+          "netWeight": {
+            "type": "string"
+          },
+          "weightUOM": {
+            "type": "string"
           }
         }
       }
