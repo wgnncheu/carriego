@@ -8,6 +8,8 @@
     "dimensionUOM": "cm",
     "creationDate": "12/20/2017",
     "totalWeight": "3.1",
+    "measuredWeight": "0",
+    "netWeight": "2.5",
     "weightUOM": "kg"
   },
   "tabs": [
