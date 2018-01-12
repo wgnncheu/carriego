@@ -53,7 +53,7 @@ function app_login($scope, app, $q) {
             body: {
                 ad: "ad.flextronics.com",
                 uid: username,
-                domain: "europe",
+                //domain: "europe",
                 passwd: password
            }
         };
