@@ -22,7 +22,6 @@ function app_details($scope, app) {
     app.data.shipmentDetails = shipmentDetails;
     
     $scope.changeSelection = function (tab) {
-    
         app.data.tabs.forEach(function(currentTab){
             currentTab.selected = false;
         });

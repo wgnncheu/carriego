@@ -25,111 +25,113 @@
                 </div>
             </div>
         </div>
-        <div class="card" data-comp-display="card.1" data-comp-id="div.2">
-            <div class="row" data-comp-id="row.2">
-                <div class="col" data-comp-id="column.2">
-                    <div data-comp-id="text.3">Tracking number</div>
-                </div>
-                <div class="col" data-comp-id="column.3">
-                    <div data-comp-id="text.4" ng-bind="data.shipmentDetails.trackingNumber"></div>
-                </div>
-            </div>
-        </div>
-        <div class="card" data-comp-display="card.1" data-comp-id="div.3">
-            <div class="row">
-                <div class="col" data-comp-id="column.4">
-                    <div data-comp-id="text.5">Shipment number</div>
-                </div>
-                <div class="col" data-comp-id="column.5">
-                    <div data-comp-id="text.6" ng-bind="data.shipmentDetails.shipmentNumber"></div>
+        <div ng-if="data.tabs[0].selected">
+            <div class="card" data-comp-display="card.1" data-comp-id="div.2">
+                <div class="row" data-comp-id="row.2">
+                    <div class="col" data-comp-id="column.2">
+                        <div data-comp-id="text.3">Tracking number</div>
+                    </div>
+                    <div class="col" data-comp-id="column.3">
+                        <div data-comp-id="text.4" ng-bind="data.shipmentDetails.trackingNumber"></div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col" data-comp-id="column.6">
-                    <div data-comp-id="text.7">Status</div>
+            <div class="card" data-comp-display="card.1" data-comp-id="div.3">
+                <div class="row">
+                    <div class="col" data-comp-id="column.4">
+                        <div data-comp-id="text.5">Shipment number</div>
+                    </div>
+                    <div class="col" data-comp-id="column.5">
+                        <div data-comp-id="text.6" ng-bind="data.shipmentDetails.shipmentNumber"></div>
+                    </div>
                 </div>
-                <div class="col" data-comp-id="column.7">
-                    <div data-comp-id="text.8" ng-bind="data.shipmentDetails.shipmentStatus"></div>
+                <div class="row">
+                    <div class="col" data-comp-id="column.6">
+                        <div data-comp-id="text.7">Status</div>
+                    </div>
+                    <div class="col" data-comp-id="column.7">
+                        <div data-comp-id="text.8" ng-bind="data.shipmentDetails.shipmentStatus"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col" data-comp-id="column.8">
-                    <div data-comp-id="text.9">Creation date</div>
+                <div class="row">
+                    <div class="col" data-comp-id="column.8">
+                        <div data-comp-id="text.9">Creation date</div>
+                    </div>
+                    <div class="col" data-comp-id="column.9">
+                        <div data-comp-id="text.10" ng-bind="data.shipmentDetails.creationDate"></div>
+                    </div>
                 </div>
-                <div class="col" data-comp-id="column.9">
-                    <div data-comp-id="text.10" ng-bind="data.shipmentDetails.creationDate"></div>
+                <div class="row">
+                    <div class="col" data-comp-id="column.10">
+                        <div data-comp-id="text.11">Carrier</div>
+                    </div>
+                    <div class="col" data-comp-id="column.11">
+                        <div data-comp-id="text.12" ng-bind="data.shipmentDetails.carrier"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col" data-comp-id="column.10">
-                    <div data-comp-id="text.11">Carrier</div>
-                </div>
-                <div class="col" data-comp-id="column.11">
-                    <div data-comp-id="text.12" ng-bind="data.shipmentDetails.carrier"></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col" data-comp-id="column.12">
-                    <div data-comp-id="text.13">Service level</div>
-                </div>
-                <div class="col" data-comp-id="column.13">
-                    <div data-comp-id="text.14" ng-bind="data.shipmentDetails.serviceLevel"></div>
-                </div>
-            </div>
-        </div>
-        <div class="card" data-comp-display="card.2" data-comp-id="div.4">
-            <div class="row">
-                <div class="col" data-comp-id="column.14">
-                    <div data-comp-id="text.15">Height</div>
-                </div>
-                <div class="col" data-comp-id="column.15">
-                    <span ng-bind="data.shipmentDetails.packageHeight"></span>
-                    <span ng-bind="data.shipmentDetails.dimensionUOM"></span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col" data-comp-id="column.16">
-                    <div data-comp-id="text.16">Length</div>
-                </div>
-                <div class="col" data-comp-id="column.17">
-                    <span ng-bind="data.shipmentDetails.packageLength"></span>
-                    <span ng-bind="data.shipmentDetails.dimensionUOM"></span>
+                <div class="row">
+                    <div class="col" data-comp-id="column.12">
+                        <div data-comp-id="text.13">Service level</div>
+                    </div>
+                    <div class="col" data-comp-id="column.13">
+                        <div data-comp-id="text.14" ng-bind="data.shipmentDetails.serviceLevel"></div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col" data-comp-id="column.18">
-                    <div data-comp-id="text.17">Depth</div>
+            <div class="card" data-comp-display="card.2" data-comp-id="div.4">
+                <div class="row">
+                    <div class="col" data-comp-id="column.14">
+                        <div data-comp-id="text.15">Height</div>
+                    </div>
+                    <div class="col" data-comp-id="column.15">
+                        <span ng-bind="data.shipmentDetails.packageHeight"></span>
+                        <span ng-bind="data.shipmentDetails.dimensionUOM"></span>
+                    </div>
                 </div>
-                <div class="col" data-comp-id="column.19">
-                    <span ng-bind="data.shipmentDetails.packageDepth"></span>
-                    <span ng-bind="data.shipmentDetails.dimensionUOM"></span>
+                <div class="row">
+                    <div class="col" data-comp-id="column.16">
+                        <div data-comp-id="text.16">Length</div>
+                    </div>
+                    <div class="col" data-comp-id="column.17">
+                        <span ng-bind="data.shipmentDetails.packageLength"></span>
+                        <span ng-bind="data.shipmentDetails.dimensionUOM"></span>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col" data-comp-id="column.20">
-                    <div data-comp-id="text.18">Total weight</div>
+                <div class="row">
+                    <div class="col" data-comp-id="column.18">
+                        <div data-comp-id="text.17">Depth</div>
+                    </div>
+                    <div class="col" data-comp-id="column.19">
+                        <span ng-bind="data.shipmentDetails.packageDepth"></span>
+                        <span ng-bind="data.shipmentDetails.dimensionUOM"></span>
+                    </div>
                 </div>
-                <div class="col" data-comp-id="column.21">
-                    <span ng-bind="data.shipmentDetails.totalWeight"></span>
-                    <span ng-bind="data.shipmentDetails.weightUOM"></span>
+                <div class="row">
+                    <div class="col" data-comp-id="column.20">
+                        <div data-comp-id="text.18">Total weight</div>
+                    </div>
+                    <div class="col" data-comp-id="column.21">
+                        <span ng-bind="data.shipmentDetails.totalWeight"></span>
+                        <span ng-bind="data.shipmentDetails.weightUOM"></span>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col" data-comp-id="column.22">
-                    <div data-comp-id="text.19">Measured weight</div>
+                <div class="row">
+                    <div class="col" data-comp-id="column.22">
+                        <div data-comp-id="text.19">Measured weight</div>
+                    </div>
+                    <div class="col" data-comp-id="column.23">
+                        <span ng-bind="data.shipmentDetails.measuredWeight"></span>
+                        <span ng-bind="data.shipmentDetails.weightUOM"></span>
+                    </div>
                 </div>
-                <div class="col" data-comp-id="column.23">
-                    <span ng-bind="data.shipmentDetails.measuredWeight"></span>
-                    <span ng-bind="data.shipmentDetails.weightUOM"></span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col" data-comp-id="column.24">
-                    <div data-comp-id="text.20">Net weight</div>
-                </div>
-                <div class="col" data-comp-id="column.25">
-                    <span ng-bind="data.shipmentDetails.netWeight"></span>
-                    <span ng-bind="data.shipmentDetails.weightUOM"></span>
+                <div class="row">
+                    <div class="col" data-comp-id="column.24">
+                        <div data-comp-id="text.20">Net weight</div>
+                    </div>
+                    <div class="col" data-comp-id="column.25">
+                        <span ng-bind="data.shipmentDetails.netWeight"></span>
+                        <span ng-bind="data.shipmentDetails.weightUOM"></span>
+                    </div>
                 </div>
             </div>
         </div>
