@@ -136,14 +136,29 @@
             </div>
         </div>
         <div ng-if="data.tabs[1].selected">
-            <div class="card" data-comp-display="card.1" data-comp-id="div.5">
-                <div class="row" data-comp-id="row.3">
-                    <div class="col" data-comp-id="column.26">
-                        <div data-comp-id="text.21">Ship to</div>
+            <div class="card">
+                <div class="row">
+                    <div class="col">
+                        <div data-comp-id="text.21" style="font-weight: bold; font-size: 20px;">Ship to</div>
                     </div>
                 </div>
-                <div class="row" data-comp-id="row.4">
-                    <div data-comp-id="text.22" ng-bind="data.shipmentDetails.shipToName"></div>
+                <div class="row">
+                    <div class="col">
+                        <div ng-bind="data.shipmentDetails.shipToName"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div ng-bind="data.shipmentDetails.shipToAddress"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <span ng-bind="data.shipmentDetails.shipToCity"></span>
+                        <span>
+                            ,</span>
+                        <span ng-bind="data.shipmentDetails.shipToCountry"></span>
+                    </div>
                 </div>
             </div>
         </div>
