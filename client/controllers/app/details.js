@@ -22,6 +22,11 @@ function app_details($scope, app) {
     app.data.shipmentDetails = shipmentDetails;
     
     $scope.changeSelection = function (tab) {
-      console.log("selection changed")   ;
-    }
+    
+        app.data.tabs.forEach(function(currentTab){
+            currentTab.selected = false;
+        });
+        
+        tab.selected = true;
+    };
 }
