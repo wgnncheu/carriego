@@ -1,7 +1,7 @@
 {
   "shipmentDetails": {
-    "trackingNumber": "123",
-    "shipmentNumber": "sn01",
+    "trackingNumber": "794655748180",
+    "shipmentNumber": "GRND000083",
     "shipmentStatus": "Delivered",
     "packageHeight": "25",
     "packageLength": "20",
@@ -9,7 +9,7 @@
     "dimensionUOM": "cm",
     "creationDate": "12/20/2017",
     "carrier": "FedEx",
-    "serviceLevel": "FedEx Ground",
+    "serviceLevel": "FedEx Ground®",
     "totalWeight": "3.1",
     "measuredWeight": "0",
     "netWeight": "2.5",
