@@ -1,7 +1,7 @@
 {
   "type": "object",
   "properties": {
-    "isLanding": {
+    "isLogin": {
       "type": "identifier",
       "selector": "body",
       "control": "exists"
