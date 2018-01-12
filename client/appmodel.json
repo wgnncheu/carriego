@@ -62,7 +62,7 @@
               "type": "boolean"
             },
             "action": {
-              "type": "action"
+              "type": "method"
             }
           }
         }
