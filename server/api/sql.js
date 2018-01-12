@@ -9,37 +9,34 @@ var config = {
     port: 1433
 };
 //3.
-function loadShipmentDetails(param) {
-    var trackingNumber = param.trackingNumber;
+function loadShipmentDetails(page, params) {
+    var trackingNumber = params.trackingNumber;
+
     var dbConn = new sql.ConnectionPool(config);
     //5.
     dbConn.connect().then(function () {
         //6.
         var request = new sql.Request(dbConn);
-        //7.
-        var queryString = "select ";
-		queryString += "    p.TrackingNumber, ";
-		queryString += "    p.SerialNumber, ";
-		queryString += "    s.ShipmentNumber ";
-        queryString += "FROM	Package		p ";
-        queryString += "JOIN	Shipment	s	ON	p.ShipmentId	=	s.Id ";
-        queryString += "WHERE	p.TrackingNumber = '" + trackingNumber + "'";
 
-        request.query(queryString).then(function (recordSet) {
+        request.input('trackingNumber', sql.VarChar(200), trackingNumber)
+        .execute("ListShipmentDetails").then(function (recordSet) {
+            //4.
             console.log(recordSet);
             dbConn.close();
+
+            page.data(function (data) {
+                data.shipmentDetails = recordSet;
+            }).screen('details');
         }).catch(function (err) {
-            //8.
+            //5.
             console.log(err);
             dbConn.close();
         });
+
     }).catch(function (err) {
         //9.
         console.log(err);
     });
 }
-//10.
-
-loadShipmentDetails({ trackingNumber: "794655748180" });
 
 exports.loadShipmentDetails = loadShipmentDetails;
