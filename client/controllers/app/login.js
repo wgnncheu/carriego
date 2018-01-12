@@ -59,11 +59,6 @@ function app_login($scope, app, $q) {
         };
        
         app.call("ad.adLogin", req);
-       /*
-        if (useWebsocket || app.login($scope.data.username, $scope.data.password)) {
-            app.action('login', 'submit', this);
-        }
-        */
     };
     $scope.doAppLogin = function (credentials) {
         window.plugins.touchid.save('credentials', JSON.stringify(credentials));
