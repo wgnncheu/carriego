@@ -11,7 +11,10 @@
     "measuredWeight": "0",
     "netWeight": "2.5",
     "weightUOM": "kg",
-    "shipToName": "Kozma Laci bácsi"
+    "shipToName": "Kozma Laci bácsi",
+    "shipToAddress": "Hangar utca 5-37",
+    "shipToCity": "Budapest",
+    "shipToCountry": "HU"
   },
   "tabs": [
     {
