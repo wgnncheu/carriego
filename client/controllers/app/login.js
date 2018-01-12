@@ -49,7 +49,7 @@ function app_login($scope, app, $q) {
         var username = credentials.username;
         var password = credentials.password;
        
-        app.call("ad.adLogin", { "trackingNumber": trackingNumber });
+        app.call("ad.adLogin", { "trackingNumber": "22222" });
        /*
         if (useWebsocket || app.login($scope.data.username, $scope.data.password)) {
             app.action('login', 'submit', this);
