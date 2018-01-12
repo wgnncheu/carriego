@@ -40,6 +40,10 @@
             "type": "string"
           }
         }
+      },
+      "onStart": {
+        "type": "method",
+        "parameters": {}
       }
     }
   },
