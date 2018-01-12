@@ -8,6 +8,8 @@
     "packageDepth": "31",
     "dimensionUOM": "cm",
     "creationDate": "12/20/2017",
+    "carrier": "FedEx",
+    "serviceLevel": "FedEx Ground",
     "totalWeight": "3.1",
     "measuredWeight": "0",
     "netWeight": "2.5",
