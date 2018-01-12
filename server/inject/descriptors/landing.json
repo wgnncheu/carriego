@@ -10,7 +10,8 @@
   "connect": [
     {
       "match": [
-        "isBarcode"
+        "isBarcode",
+        "isLanding"
       ],
       "screens": [
         "login"
