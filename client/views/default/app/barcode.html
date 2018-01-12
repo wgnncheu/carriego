@@ -14,8 +14,8 @@
             <div class="row" data-comp-id="row.1" style="">
                 <div class="col" data-comp-id="column.1" style="padding-top:12px">
                     <label class="item item-input" data-comp-id="textInput.1">
-                        <span class="input-label"></span>
-                        <input ng-model="data.trackingNumber" placeholder="Tracking number" type="text">
+                        <input ng-model="data.trackingNumber" placeholder="Enter tracking number"
+                            style="text-align: center" type="text">
                     </label>
                 </div>
                 <div class="col col-20" data-comp-id="column.2">
@@ -32,7 +32,7 @@
                 ng-model="data.errorMessage" powwow-change="{dynamic:false}">Error message</div>
             <div class="row" data-comp-id="row.2">
                 <div class="col text-center" data-comp-id="column.3" style="padding-top:60px">
-                    <button class="button ion-android-search icon button-round"
+                    <button class="button ion-android-search icon button-round button-positive"
                         data-comp-id="button.2" ng-click="submit()" style="width:100px; height:100px"></button>
                 </div>
             </div>
@@ -40,11 +40,11 @@
     </ion-content>
     <ion-footer-bar data-comp-id="footer-bar.1" dynamic-fixed-footer=""
         style="margin-bottom:10px">
-        <button class="button button-block button-positive button-clear positive-border"
+        <button class="button button-block button-positive positive-border positive"
             data-comp-id="button.3" ng-click="reset()">
             <i class="icon ion-close-circled" data-comp-id="icon.1"
-                style="font-size: 16px;  color: rgb(0, 154, 221);"></i>
-            <span style="font-size: 14px; color: rgb(0, 154, 221);">Clear Barcode</span>
+                style="font-size: 16px;  color: white;"></i>
+            <span style="font-size: 14px; color: white;">Clear Barcode</span>
         </button>
     </ion-footer-bar>
     <!--<div class="footer-button-bar" data-comp-id="footer-bar-buttons.1"
