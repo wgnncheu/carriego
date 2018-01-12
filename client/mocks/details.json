@@ -24,12 +24,12 @@
     {
       "name": "General",
       "icon": "ion-ios-information",
-      "selected": false
+      "selected": true
     },
     {
-      "name": "Address",
+      "name": "Addresses",
       "icon": "ion-help-buoy",
-      "selected": true
+      "selected": false
     }
   ]
 }

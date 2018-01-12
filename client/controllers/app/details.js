@@ -10,7 +10,7 @@ function app_details($scope, app) {
           selected: true
         },
         {
-          name: "Address",
+          name: "Addresses",
           icon: "ion-help-buoy",
           selected: false
         }
