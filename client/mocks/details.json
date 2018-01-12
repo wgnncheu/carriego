@@ -2,6 +2,7 @@
   "shipmentDetails": {
     "trackingNumber": "123",
     "shipmentNumber": "sn01",
+    "shipmentStatus": "Delivered",
     "packageHeight": "25",
     "packageLength": "20",
     "packageDepth": "31",
