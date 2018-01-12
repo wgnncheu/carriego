@@ -22,8 +22,6 @@
   "connect": [
     {
       "match": [
-        "isBarcode",
-        "isLanding",
         "isLogin"
       ],
       "screens": [
