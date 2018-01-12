@@ -1,7 +1,7 @@
 {
   "type": "object",
   "properties": {
-    "isBarcode": {
+    "isLanding": {
       "type": "identifier",
       "selector": "body",
       "control": "exists"
@@ -9,9 +9,11 @@
   },
   "connect": [
     {
-      "match": [],
+      "match": [
+        "isBarcode"
+      ],
       "screens": [
-        "barcode"
+        "login"
       ]
     }
   ]
