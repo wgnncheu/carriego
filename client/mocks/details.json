@@ -17,12 +17,12 @@
     {
       "name": "General",
       "icon": "ion-ios-information",
-      "selected": true
+      "selected": false
     },
     {
       "name": "Address",
       "icon": "ion-help-buoy",
-      "selected": false
+      "selected": true
     }
   ]
 }
