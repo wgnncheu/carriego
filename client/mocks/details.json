@@ -6,7 +6,9 @@
     "packageLength": "20",
     "packageDepth": "31",
     "dimensionUOM": "cm",
-    "creationDate": "12/20/2017"
+    "creationDate": "12/20/2017",
+    "totalWeight": "3.1",
+    "weightUOM": "kg"
   },
   "tabs": [
     {
