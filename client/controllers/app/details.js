@@ -10,12 +10,7 @@ function app_details($scope, app) {
           selected: true
         },
         {
-          name: "Shipper",
-          icon: "ion-ios-bell",
-          selected: false
-        },
-        {
-          name: "Recipient",
+          name: "Address",
           icon: "ion-help-buoy",
           selected: false
         }
