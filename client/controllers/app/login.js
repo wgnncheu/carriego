@@ -64,4 +64,8 @@ function app_login($scope, app, $q) {
         window.plugins.touchid.save('credentials', JSON.stringify(credentials));
         $scope.doLogin(credentials, true);
     };
+    
+    $scope.onStart = function () {
+        
+    };
 }
