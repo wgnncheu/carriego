@@ -12,8 +12,7 @@
             <div class="row light-bg" data-comp-id="row.1" style="padding: 0px;">
                 <div class="col text-center " data-comp-id="column.1"
                     ng-class="item.selected ? 'positive-bg' : ''"
-                    ng-click="app.action('details', 'tabs[item].action', this)"
-                    ng-repeat="item in data.tabs"
+                    ng-click="app.call('details.tabs.action')" ng-repeat="item in data.tabs"
                     style="margin: 0px; padding: 10px 15px; border-right: 1px solid rgb(221, 221, 221);">
                     <i class="icon {{item.icon}} light" data-comp-id="icon.1" ng-if="item.selected"
                         style="font-size: 20px; float: left;"></i>

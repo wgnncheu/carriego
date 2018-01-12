@@ -7,15 +7,21 @@ function app_details($scope, app) {
         {
           name: "General",
           icon: "ion-ios-information",
-          selected: true
+          selected: true, 
+          action: "changeSelection()"
         },
         {
           name: "Address",
           icon: "ion-help-buoy",
-          selected: false
+          selected: false,
+          action: "changeSelection()"
         }
     ];
     
     var shipmentDetails = app.data.shipmentDetails.recordset[0];
     app.data.shipmentDetails = shipmentDetails;
+    
+    $scope.changeSelection = function () {
+      console.log("selection changed")   ;
+    }
 }
