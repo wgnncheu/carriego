@@ -19,10 +19,10 @@
     "shipToAddress": "Hangar utca 5-37",
     "shipToCity": "Budapest",
     "shipToCountry": "HU",
-    "shipFromName": "Flex LTD",
-    "shipFromAddress": "E. Holmes Road",
-    "shipFromCity": "Memphis",
-    "shipFromCountry": "US"
+    "senderName": "Flex LTD",
+    "senderAddress": "E. Holmes Road",
+    "senderCity": "Memphis",
+    "senderCountry": "US"
   },
   "tabs": [
     {
@@ -33,7 +33,7 @@
     {
       "name": "Addresses",
       "icon": "ion-help-buoy",
-      "selected": false
+      "selected": true
     }
   ]
 }
