@@ -33,7 +33,7 @@
       "name": "Barcode",
       "sourceScreenId": "app.barcode",
       "sourceAppId": "Barcode",
-      "model": "barcode"
+      "model": "landing"
     },
     {
       "id": "details",

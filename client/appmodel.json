@@ -140,9 +140,8 @@
       }
     }
   },
-  "barcode": {
+  "landing": {
     "type": "object",
-    "comment": "",
     "properties": {
       "trackingNumber": {
         "type": "string"

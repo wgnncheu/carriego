@@ -9,9 +9,7 @@
   },
   "connect": [
     {
-      "match": [
-        "isBarcode"
-      ],
+      "match": [],
       "screens": [
         "barcode"
       ]
