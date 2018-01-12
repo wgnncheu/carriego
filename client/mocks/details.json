@@ -14,7 +14,11 @@
     "shipToName": "Kozma Laci bácsi",
     "shipToAddress": "Hangar utca 5-37",
     "shipToCity": "Budapest",
-    "shipToCountry": "HU"
+    "shipToCountry": "HU",
+    "shipFromName": "Flex LTD",
+    "shipFromAddress": "E. Holmes Road",
+    "shipFromCity": "Memphis",
+    "shipFromCountry": "US"
   },
   "tabs": [
     {

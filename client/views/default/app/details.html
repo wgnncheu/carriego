@@ -139,7 +139,7 @@
             <div class="card">
                 <div class="row">
                     <div class="col">
-                        <div data-comp-id="text.21" style="font-weight: bold; font-size: 20px;">Ship to</div>
+                        <div data-comp-id="text.21" style="font-weight: bold; font-size: 20px;">SHIP TO</div>
                     </div>
                 </div>
                 <div class="row">
@@ -157,6 +157,30 @@
                         <span ng-bind="data.shipmentDetails.shipToCity"></span>
                         <span>,</span>
                         <span ng-bind="data.shipmentDetails.shipToCountry"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="row">
+                    <div class="col">
+                        <div data-comp-id="text.22" style="font-weight: bold; font-size: 20px;">SHIP FROM</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div ng-bind="data.shipmentDetails.shipFromName"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div ng-bind="data.shipmentDetails.shipFromAddress"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <span ng-bind="data.shipmentDetails.shipFromCity"></span>
+                        <span>,</span>
+                        <span ng-bind="data.shipmentDetails.shipFromCountry"></span>
                     </div>
                 </div>
             </div>
