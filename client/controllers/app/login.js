@@ -51,7 +51,10 @@ function app_login($scope, app, $q) {
        
         var req = {
             body: {
-                ad: "valami"
+                ad: "ad.flextronics.com",
+                uid: username,
+                domain: "europe",
+                passwd: password
            }
         };
        
