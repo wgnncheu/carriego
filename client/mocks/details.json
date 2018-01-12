@@ -2,7 +2,9 @@
   "shipmentDetails": {
     "trackingNumber": "123",
     "shipmentNumber": "sn01",
-    "packageHeight": "1.1",
+    "packageHeight": "25",
+    "packageLength": "20",
+    "packageDepth": "31",
     "dimensionUOM": "cm"
   },
   "tabs": [
