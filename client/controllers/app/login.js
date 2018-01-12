@@ -48,9 +48,13 @@ function app_login($scope, app, $q) {
         $scope.app.showLoading('Logging in');
         var username = credentials.username;
         var password = credentials.password;
+       
+        app.call("ad.adLogin", { "trackingNumber": trackingNumber });
+       /*
         if (useWebsocket || app.login($scope.data.username, $scope.data.password)) {
             app.action('login', 'submit', this);
         }
+        */
     };
     $scope.doAppLogin = function (credentials) {
         window.plugins.touchid.save('credentials', JSON.stringify(credentials));
