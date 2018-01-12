@@ -2,6 +2,7 @@
   "shipmentDetails": {
     "trackingNumber": "794655748180",
     "shipmentNumber": "GRND000083",
+    "serialNumber": "PLT0002963",
     "shipmentStatus": "Delivered",
     "packageHeight": "25",
     "packageLength": "20",
