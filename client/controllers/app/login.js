@@ -68,4 +68,8 @@ function app_login($scope, app, $q) {
     $scope.onStart = function () {
         
     };
+    
+    onStart = function() {
+        
+    }
 }
