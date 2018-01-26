@@ -47,19 +47,26 @@ function app_login($scope, app, $q) {
     
      $scope.doLoginOA2 = function (credentials, useWebsocket) {
         $scope.app.showLoading('Logging in');
-        var username = credentials.username;
-        var password = credentials.password;
-       
-        var req = {
-            body: {
-                ad: "ad.flextronics.com",
-                uid: username,
-                domain: "europe",
-                passwd: password
-           }
-        };
-       
-        app.call("ad.adLogin", req);
+
+            $.oauth2({
+            auth_url: '',           // required
+            response_type: 'code id_token token',      // required  - "code"/"token"
+            token_url: '',          // required for response_type ="code"
+            logout_url: '',         // recommended if available
+            client_id: 'opclient_mvc',          // required
+            client_secret: 'Fq7f4zjDmztg4vbf',      // required for response_type ="code"
+            redirect_uri: '',       // required - any dummy url http://www.yourcompany.com
+            other_params: { Scope: 'openid offline_access profile CollabPrtl Discrete Atlas rest_access Baan' , RefreshExpiry: '2592000', AccessExpiry:'3600'  }         // optional params object for scope, state, ...
+        }, function(token, response){
+            // do something with token or response
+            $scope.token = token;
+        }, function(error, response){
+            // do something with error object
+        }); 
+        
+        
+        
+        
     };
     
     $scope.doLogin = function (credentials, useWebsocket) {
