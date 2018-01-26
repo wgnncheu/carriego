@@ -39,11 +39,29 @@ function app_login($scope, app, $q) {
         localStorage.clear();
     };
     $scope.login = function () {
-        $scope.doLogin({
+        $scope.doLoginOA2({
             username: $scope.data.username,
             password: $scope.data.password
         }, false);
     };
+    
+     $scope.doLoginOA2 = function (credentials, useWebsocket) {
+        $scope.app.showLoading('Logging in');
+        var username = credentials.username;
+        var password = credentials.password;
+       
+        var req = {
+            body: {
+                ad: "ad.flextronics.com",
+                uid: username,
+                domain: "europe",
+                passwd: password
+           }
+        };
+       
+        app.call("ad.adLogin", req);
+    };
+    
     $scope.doLogin = function (credentials, useWebsocket) {
         $scope.app.showLoading('Logging in');
         var username = credentials.username;
